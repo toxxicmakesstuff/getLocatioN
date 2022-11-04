@@ -38,9 +38,6 @@ class _LiveDataState extends State<LiveData> {
       }
     }
     _locationData = await location.getLocation();
-    print("===================");
-    print("await");
-    print("===================");
     try {
       var data = await geoCode.reverseGeocoding(
           latitude: _locationData.latitude!,
